@@ -1,0 +1,77 @@
+
+{% extends "base.html" %}
+
+{% block title %}Home - Calorie Counter{% endblock %}
+
+{% block content %}
+
+<section class="py-16 text-center">
+
+    <h1 class="text-5xl font-bold text-slate-900 mb-6">
+        Track Your Calories.
+        <span class="text-green-600">Reach Your Goals.</span>
+    </h1>
+
+    <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-8">
+        Track your daily calorie intake and understand your nutrition better.
+    </p>
+
+    <a href="/calculator/"
+       class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg transition">
+        Calculate Your Calories
+    </a>
+
+</section>
+
+<section class="py-12">
+
+    <div class="text-center mb-10">
+
+        <h2 class="text-4xl font-bold text-slate-900 mb-4">
+            Common Foods
+        </h2>
+
+        <p class="text-slate-600">
+            Check the calories of some common foods.
+        </p>
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="bg-white rounded-xl shadow-md p-6">
+            <h3 class="text-xl font-bold mb-2">
+                Rice
+            </h3>
+
+            <p class="text-slate-600">
+                130 kcal per 100g
+            </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md p-6">
+            <h3 class="text-xl font-bold mb-2">
+                Chicken
+            </h3>
+
+            <p class="text-slate-600">
+                165 kcal per 100g
+            </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md p-6">
+            <h3 class="text-xl font-bold mb-2">
+                Banana
+            </h3>
+
+            <p class="text-slate-600">
+                89 kcal per 100g
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
+
